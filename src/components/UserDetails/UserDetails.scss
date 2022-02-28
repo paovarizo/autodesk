@@ -1,0 +1,45 @@
+@import '../../styles/base';
+.details-container{
+    display: flex;
+    justify-content: center;
+    height: 88vh;
+    align-items: center;
+}
+.container-avatar{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.details-subcontainer{
+    width: 50%;
+    text-align: center;
+}
+.back-container{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: $color-thistle;
+}
+.back-subcontainer{
+    width: 80%;
+    margin-top: 30px;
+}
+.avatar{
+    background-color: $color-rebecca-pruple;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: $color-thistle;
+}
+
+.details-data-name{
+    font-weight: bold;
+}
+
+.details-data-email, .details-data-phone{
+    color: $color-thistle;
+}

@@ -1,0 +1,220 @@
+@import '../../styles/base';
+
+body{
+    font-family: $font-primary;
+}
+.container{
+    display: flex;
+    justify-content: center;
+
+}
+.container-btn{
+    display: flex;
+    justify-content: center;
+}
+.sub-container-btn{
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 90vh;
+    @include for-phone-only(){
+        width: 300px;
+    }
+}
+table{
+    width: 90%;
+    border-spacing: 0;
+    @include for-phone-only(){
+        width: 300px;
+    }
+    .tr-table{
+        height: 50px;
+        @include for-phone-only(){
+            height: 35px;
+        }
+    }
+    .th-table{
+        text-align: left;
+        height: 50px;
+        color: $color-rebecca-pruple;
+        @include for-phone-only(){
+            font-size: 9px;
+            border-bottom: 1px solid #80808020;
+            height: 30px;
+        }
+    }
+    .td-table{
+        border-bottom: 1px solid #80808020;
+        @include for-phone-only(){
+            font-size: 8px;
+            text-align: center;
+        }
+    }
+    .td-table-name{
+        @include for-phone-only(){
+            font-size: 8px;
+            text-align: left;
+        }
+    }
+    .td-table-phone{
+        @include for-phone-only(){
+            font-size: 8px;
+            text-align: right;
+        }
+    }
+    .div-th{
+        display: flex;
+        align-items: center;
+    }
+}
+.modal{
+    position: absolute;
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    font-family: $font-primary;
+    h2{
+        color: $color-rebecca-pruple;
+        text-align: center;
+        @include for-phone-only(){
+            font-size: 13px;
+        }
+    }
+}
+.name-icon{
+    padding-right: 5px;
+    color: $color-thistle;
+    @include for-phone-only(){
+        display: none;
+    }
+}
+.gender-icon{
+    padding-right: 5px;
+    stroke-width: 1;
+    color: $color-thistle;
+    @include for-phone-only(){
+        display: none;
+    }
+}
+.dob-icon{
+    padding-right: 5px;
+    color: $color-thistle;
+    @include for-phone-only(){
+        display: none;
+    }
+}
+.email-icon{
+    padding-right: 5px;
+    color: $color-thistle;
+    @include for-phone-only(){
+        display: none;
+    }
+}
+.phone-icon{
+    padding-right: 5px;
+    color: $color-thistle;
+    @include for-phone-only(){
+        display: none;
+    }
+}
+.genderf-icon{
+    stroke-width: 1;
+    color: $color-thistle;
+    @include for-phone-only(){
+        display: none;
+    }
+}
+.textfield-container{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.textfield-name , .textfield-dob, .textfield-email, .textfield-phone{
+    width: 200px;
+    @include for-phone-only(){
+        width: 180px;
+    }
+}
+.select-gender{
+    width: 200px;
+    @include for-phone-only(){
+        width: 180px;
+    }
+}
+.btn-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-cancel{
+    width: 100px;
+    font-family: $font-primary;
+    border: 1px solid $color-thistle;
+    color: $color-thistle;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 35px;
+    @include for-phone-only(){
+        width: 80px;
+        font-size: 10px;
+    }
+}
+.btn-cancel-details{
+    width: 100px;
+    font-family: $font-primary;
+    border: 1px solid $color-thistle;
+    color: $color-thistle;
+    background-color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 35px;
+    @include for-phone-only(){
+        width: 55px;
+        font-size: 6px;
+        height: 20px;
+    }
+}
+.btn-cancel-details:hover{
+    background-color: $color-rebecca-pruple;
+    color: white;
+    border: 1px solid $color-rebecca-pruple;
+}
+.btn-add{
+    width: 100px;
+    font-family: $font-primary;
+    border: 1px solid $color-rebecca-pruple;
+    color: white;
+    background-color: $color-rebecca-pruple;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 35px;
+    @include for-phone-only(){
+        width: 80px;
+        font-size: 10px;
+    }
+}
+
+.email-label{
+    @include for-phone-only(){
+            justify-content: center;
+    }
+}
+.phone-label{
+    @include for-phone-only(){
+            justify-content: flex-end;
+    }
+}
